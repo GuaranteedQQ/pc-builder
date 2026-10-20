@@ -1,0 +1,65 @@
+/* Rozvržení stránky: obsah na střed, hlavička, úvod. */
+
+/* Obsah široký max. 960 px, vycentrovaný */
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Hlavička: logo vlevo, odkazy vpravo */
+.header {
+    border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav a,
+.nav button {
+    font: inherit;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav a:hover,
+.nav button:hover {
+    color: var(--text);
+}
+
+/* Úvodní blok na hlavní stránce */
+.intro {
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.intro h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.intro p {
+    color: var(--text-muted);
+    max-width: 560px;
+    margin-bottom: 8px;
+}

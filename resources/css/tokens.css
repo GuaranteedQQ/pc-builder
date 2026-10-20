@@ -1,0 +1,27 @@
+/* Barvy a rozměry na jednom místě (stejné jako ve Figmě). */
+
+/* Světlý režim (výchozí) */
+:root {
+    --bg: #ffffff;
+    --surface-2: #f4f4f2;
+    --line: #e3e3df;
+    --text: #141414;
+    --text-muted: #6e6e6a;
+    --button-bg: #141414;
+    --button-text: #ffffff;
+
+    --radius: 6px;
+    --content-width: 960px;
+    --font: 'Inter', system-ui, sans-serif;
+}
+
+/* Tmavý režim – zapne se atributem data-theme="dark" na <html> */
+:root[data-theme='dark'] {
+    --bg: #121212;
+    --surface-2: #1e1e1c;
+    --line: #2e2e2b;
+    --text: #ededea;
+    --text-muted: #9a9a95;
+    --button-bg: #ededea;
+    --button-text: #141414;
+}
